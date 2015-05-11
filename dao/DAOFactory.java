@@ -16,13 +16,12 @@ protected static DAOFactory instance = null;
 		}
 		return instance;
 		
-		// Selon le nom du dao entree en parametre, le dao voulu sera retourné
+		// Selon le nom du dao entree en parametre, le dao voulu sera retourne
 		public IDAO getDAO (DAO pDAO)
 		{
 			IDAO dao= null;
 	        switch(pDAO)
 	        {
-	            case Client:dao = new ClientDAO();break;
 	            case Ville:dao = new VilleDAO();break;
 	            case Region:dao = new RegionDAO();break;
 	            case Pays:dao = new PaysDAO();break;
